@@ -1,0 +1,319 @@
+/* STYLES.CSS */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  background-color: #FFF;
+  padding: 15px 50px;
+  width: 90%;
+}
+
+h1 {
+  letter-spacing: 3px;
+  color: #CD6422;
+  font-family: 'Lora', serif;
+  font-size: 30px;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  font-size: 14px;
+  font-weight: 100;
+  text-align: left;
+}
+
+/* nav bar */
+    nav{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 5px;
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+        margin: 25%, 5%;
+        text-align: center;
+    }
+    .nav li {
+        margin-right: 20px;
+        padding-bottom: 15px;
+        display: inline;
+        float: right;
+    }
+
+    .nav li a {
+        color: #CD6422;
+        font-size: 18px;
+        display: inline-block;
+        padding: 10px;
+        padding-bottom: 25px;
+        font-family: 'Montserrat-semiBold', sans-serif;
+        font-weight: 300;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .nav li a img {
+        padding: 0px;
+        float: left;
+    }
+
+    .nav li a:hover{
+        /*background-color: #CD6422;
+        color: #FFF;*/
+        text-decoration: underline;
+        color: #CD6422;
+    }
+
+    .nav li a.active {
+      text-decoration: underline #F2D5C1 3px;
+    }
+
+    .nav .icon {
+        display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      .nav a:not(:first-child) {display: none;}
+      .nav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .nav.responsive {position: relative;}
+      .nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+
+/* intro */
+    .intro {
+      box-shadow: 0 3px 5px 0 rgba(0,0,0,.2);
+      height: 500px;
+      width: 1100px;
+      display: block;
+      margin-left: 45px;
+      margin-right: 55px;;
+      margin-top: 75px;
+      width: 92%;
+    }
+
+/* footer */
+    footer{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 5px;
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+        margin: 25%, 5%;
+        text-align: right;
+    }
+    .footer .icon {
+        display: none;
+    }
+    .footer li {
+        margin-right: 20px;
+        display: inline;
+    }
+
+    .footer li a {
+        color: #CD6422;
+        font-size: 18px;
+        display: inline-block;
+        padding: 10px;
+        font-family: "HelveticaNeue-Bold";
+        text-decoration: none;
+    }
+
+    .footer li a img {
+        padding: 0px;
+    }
+
+    .footer li a:hover{
+        background-color: #CD6422;
+        color: #FFF;
+    }
+
+  table {
+    padding: 15px;
+  }
+.row{
+    width: 100%;
+    display: inline-block;;
+  }
+
+.column {
+    float: left;
+    width: 50%;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+    }
+  .resize {
+      width: 400px;
+      height: auto;
+  }
+  body {
+  	background: #DDD;
+  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	color: #555;
+  	font-size: 15px;
+  	line-height: 1.3em;
+  }
+
+  h2 {
+  	font-size: 20px;
+  	color: #333;
+  	margin: 7px 0;
+  }
+
+  a:hover {
+  	text-decoration: none;
+  	color: #205F82;
+  }
+
+  a:link,a:visited {
+  	color: #4083A9;
+  	outline: none;
+  	text-decoration: none;
+  }
+
+  .author {
+  	font-size: 13px;
+  	margin: 5px 0 25px;
+  }
+
+  .date {
+  	font-size: 13px;
+  	font-weight: bold;
+  }
+
+  /**/
+  #projects {
+  	width: 1200px;
+  	/*margin: 30px auto 0px;*/
+    margin: 30px 0px;
+  	perspective: 1000;
+  }
+
+  #projects .flipper {
+  	width: 400px;
+  	height: 300px;
+  	display: inline-block;
+
+  	-webkit-transform: scale(0.90);
+  	-moz-transform: scale(0.90);
+  	-o-transform: scale(0.90);
+  	-ms-transform: scale(0.90);
+  	transform: scale(0.90);
+
+  	-webkit-box-shadow: 0 3px 5px rgba(0,0,0,.2);
+  	box-shadow: 0 3px 5px rgba(0,0,0,.2);
+
+  	-webkit-transition: all 0.3s;
+  	-moz-transition: all 0.3s;
+  	-o-transition: all 0.3s;
+  	-ms-transition: all 0.3s;
+  	transition: all 0.3s;
+
+  	-webkit-transform-style: preserve-3d;
+  	-moz-transform-style: preserve-3d;
+  	-ms-transform-style: preserve-3d;
+  	transform-style: preserve-3d;
+  	position: relative;
+  }
+
+  #projects .flipper:hover {
+  	-webkit-transform: scale(1);
+  	-moz-transform: scale(1);
+  	-o-transform: scale(1);
+  	-ms-transform: scale(1);
+  	transform: scale(1);
+
+  	-webkit-box-shadow: 0 5px 25px rgba(0,0,0,.2);
+  	box-shadow: 0 5px 25px rgba(0,0,0,.2);
+  	cursor: pointer;
+  }
+
+  #projects .flipper.blur {
+  	-webkit-filter: blur(3px);
+
+  	-webkit-transform: scale(0.88);
+  	-moz-transform: scale(0.88);
+  	-o-transform: scale(0.88);
+  	-ms-transform: scale(0.88);
+  	transform: scale(0.88);
+  	filter: alpha(opacity=60);
+  	opacity: 0.6;
+  }
+
+  #projects .flipper.rotate {
+  	-webkit-transform: rotateY(180deg);
+  	-moz-transform: rotateY(180deg);
+  	-o-transform: rotateY(180deg);
+  	-ms-transform: rotateY(180deg);
+  	transform: rotateY(180deg);
+  }
+
+  #projects:hover .clicked {
+  	-webkit-transform: rotateY(180deg);
+  	-moz-transform: rotateY(180deg);
+  	-o-transform: rotateY(180deg);
+  	-ms-transform: rotateY(180deg);
+  	transform: rotateY(180deg);
+  }
+
+  .front,.back {
+  	width: 400px;
+  	height: 300px;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	backface-visibility: hidden;
+  }
+
+  .front {
+  	z-index: 2;
+  }
+
+  .back {
+  	-webkit-transform: rotateY(180deg);
+  	-moz-transform: rotateY(180deg);
+  	-o-transform: rotateY(180deg);
+  	-ms-transform: rotateY(180deg);
+  	transform: rotateY(180deg);
+  	width: 360px;
+  	height: 260px;
+  	padding: 20px;
+  	z-index: 1;
+  	background: #FFF;
+  }
